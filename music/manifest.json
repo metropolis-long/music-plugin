@@ -1,0 +1,31 @@
+{
+    "manifest_version":3,
+    "name":"musics",
+    "version":"1.0",
+    "description":"a shift musics extension",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "128.png",
+            "48": "48.png",
+            "16": "16.png"
+          }
+    },
+    "permissions": ["storage","tabs","scripting","activeTab"],
+    "commands": {
+        "run-foo": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+Y"
+          },
+          "description": "Run \"foo\" on the current page."
+        },
+        "_execute_action": {
+          "suggested_key": {
+            "windows": "Ctrl+Shift+Y"
+          }
+        }
+    }
+}
